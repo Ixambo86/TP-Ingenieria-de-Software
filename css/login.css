@@ -1,0 +1,20 @@
+#iniciarSesion{
+    text-align: center;
+}
+
+
+form input{
+    cursor :  text;
+    margin: 10px;
+    padding : 4px;
+    display: block;
+    
+}
+
+#formulario{
+    display: inline-block;   
+}
+
+#info{
+    text-align: center;
+}
