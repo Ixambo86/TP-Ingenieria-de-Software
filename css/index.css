@@ -1,0 +1,19 @@
+header {
+    background: cyan;
+}
+
+header h1 {
+    background: red;
+    display: inline;  
+}
+
+header a {
+    background: red;
+    float: right;
+    margin: 10px;
+}
+
+main {
+
+}
+
