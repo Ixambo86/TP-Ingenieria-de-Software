@@ -104,19 +104,24 @@ main {
     text-align: center;
 }
 
-.product img{
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+}
+.container img{
     width: 150px;
 
 }
 
-.product h3{
+.container h3{
     font-size: 1.7em;
     margin-bottom: 1px;
     font: 150% sans-serif;
 
 }
 
-.card{
+.container .card{
     font: 100% sans-serif;
     border-radius: 4px;
     background-color: white;
