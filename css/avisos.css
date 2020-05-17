@@ -116,7 +116,7 @@ main {
 }
 .container img{
     width: 175px;
-
+    border-radius: 15%;
 }
 
 .container .h3{
@@ -137,6 +137,7 @@ main {
     margin-right: 15px;
     margin-top: 15px;
     line-height: 20px;
+    text-align: center;
 }
 
 .container .card:hover{
