@@ -114,7 +114,7 @@ main {
 
 }
 
-.container h3{
+.container .h3{
     font-size: 1.7em;
     margin-bottom: 1px;
     font: 150% sans-serif;
@@ -131,5 +131,9 @@ main {
     margin-right: 15px;
     margin-top: 15px;
     line-height: 20px;
+}
+
+.container .card:hover{
+    transform: translateX(+15px)
 }
 
