@@ -108,9 +108,14 @@ main {
 .container{
     width: 100%;
     max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
 }
 .container img{
-    width: 150px;
+    width: 175px;
 
 }
 
@@ -122,6 +127,7 @@ main {
 }
 
 .container .card{
+    align-content: center;
     font: 100% sans-serif;
     border-radius: 4px;
     background-color: white;
@@ -134,6 +140,6 @@ main {
 }
 
 .container .card:hover{
-    transform: translateX(+15px)
+    transform: translateY(-10px)
 }
 
