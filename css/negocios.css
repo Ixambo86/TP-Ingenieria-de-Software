@@ -66,13 +66,28 @@ header nav a:hover {
 
 
 main {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.filtros {
+    overflow: hidden;
     width: 90%;
-    margin: auto;
+    height: 100px;
+    margin: auto; 
+    margin-top: 20px;
+    border: 1px solid gray;
+    border-radius: 25px;
     text-align: center;
 }
 
-main h2 {
-    font-size: 40px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.resultados {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    text-align: center;
 }
