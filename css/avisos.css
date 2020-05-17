@@ -138,6 +138,7 @@ main {
     margin-top: 15px;
     line-height: 20px;
     text-align: center;
+    transition: all 0.25s;
 }
 
 .container .card:hover{
