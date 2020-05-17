@@ -114,8 +114,9 @@ main {
     justify-content: center;
     margin: auto;
 }
-.container img{
+.container .card img{
     width: 175px;
+    height: 125px;
     border-radius: 15%;
 }
 
