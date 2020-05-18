@@ -146,3 +146,20 @@ main {
     transform: translateY(-10px)
 }
 
+ .category-wrapper{
+    text-align: center;
+    position: bottom;
+    font: 100% sans-serif;
+    margin-top: 15px;
+}
+
+ .category-wrapper a{
+    color:aliceblue;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 5px;
+    background: brown;
+    padding: 7px;
+    border-radius: 5%;
+}
+
