@@ -3,92 +3,147 @@
 	padding: 0;
 }
 
-header {
+.contenedor {
     width: 100%;
-    background: royalblue;
-    overflow: hidden;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
 }
 
-header h1 {
+.contenedor header {
+    background: royalblue;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor header h1 {
     color: aliceblue;
     font-size: 50px;
-    float: left;
+    font: oblique bold 300% cursive;
     line-height: 100px;
     margin-left: 10%;
 }
 
-header nav {
-    float: right;
+.contenedor header nav {
     line-height: 100px;
 }
 
-header nav a {
+.contenedor header nav a {
     color: aliceblue;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    line-height: normal;
     margin-right: 25px;
     padding: 10px;
     border-radius: 30px;
+    font: 110% sans-serif;
 }
 
-header nav a:hover {
-    font-size: 22px;
+.contenedor header nav a:hover {
+    font-size: 15px;
 }
 
-.registrarse {
+.contenedor header nav .registrarse {
     background: rgb(255, 153, 0);
 }
 
-.registrarse:hover {
-    background: rgb(10, 10, 9);
+.contenedor header nav .iniciarSesion{
+    background: rgb(36, 228, 19);
 }
 
-.menu {
+.contenedor .menu {
+    grid-column-start: 1;
+    grid-column-end: -1;
     background: brown;
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
+    display: flex;
 }
 
-.menu a {
-    float: left;
+.contenedor .menu a {
     color: aliceblue;
     text-decoration: none;
+    font: 100% sans-serif;
     font-size: 20px;
     padding: 10px 50px; 
 }
 
-.menu a:hover {
+.contenedor .menu a:hover {
     background: rgb(207, 82, 82);
 }
 
+.contenedor aside {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
 
-main {
+.contenedor aside form {
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.contenedor aside div {
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+.contenedor aside .reporte,
+.contenedor aside .edad {
+    border-bottom: 1px solid gray;
+}
+
+.contenedor aside div h3 {
+    margin-bottom: 10px;
+}
+
+.contenedor .publicaciones {
+    margin-top: 20px;
+    margin-right: 20px;
+    grid-column: span 3; 
+    max-width: 1200px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+}
+
+.contenedor .publicaciones .card {
+    width: 185px;
+    height: 260px;
+    font: 100% sans-serif;
+    border-radius: 30px;
+    margin: 15px;
+    transition: all 0.25s;
+    border: 1px solid gray;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;  
+    overflow: hidden;
+}
+
+.publicaciones .card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-10px)
+}
+
+.publicaciones .card img {
     width: 100%;
-    height: 800px;
-    overflow: hidden;
+    height: 140px;
 }
 
-.filtros {
-    overflow: hidden;
-    width: 90%;
-    height: 100px;
-    margin: auto; 
-    margin-top: 20px;
-    border: 1px solid gray;
-    border-radius: 25px;
+.publicaciones .card .datos {
+    padding: 13px;
     text-align: center;
 }
 
-.resultados {
-    width: 90%;
-    height: 400px;
-    margin: auto;
-    margin-top: 20px;
-    border: 1px solid gray;
-    border-radius: 25px;
-    text-align: center;
+.publicaciones .card .datos h3 {
+    margin-bottom: 5px;
 }
 
+.publicaciones .card .datos p {
+    font-size: 15px;
+    line-height: 1.4;
+}
